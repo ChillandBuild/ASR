@@ -1,0 +1,40 @@
+# --- Python ---
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.cache/
+
+# --- Secrets: never commit. Copy .env.example and fill in your own keys. ---
+.env*
+!.env.example
+
+# --- Data: shared privately (Drive etc.), never through git ---
+Data/*
+!Data/README.md
+private_outputs/*
+!private_outputs/README.md
+
+# Audio, transcripts and papers anywhere in the repo
+*.mp3
+*.wav
+*.flac
+*.m4a
+*.ogg
+*.docx
+*.pdf
+
+# --- Model weights and checkpoints ---
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# --- Misc ---
+*.zip
+*.log
+node_modules/
+.DS_Store

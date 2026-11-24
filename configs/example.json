@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "output_dir": "private_outputs/run_01",
+  "seed": 20261012,
+  "local_processing_authorized": true,
+  "authorization_note": "Who approved local processing of these recordings, and when.",
+  "dataset_license_status": "Fill in: consent/licence status of the new recordings.",
+  "pilot_duration_s": 1800,
+  "max_segment_s": 30,
+  "model": "small",
+  "backend": "cpu",
+  "threads": 4,
+  "inference": {
+    "language": "ta",
+    "task": "transcribe",
+    "temperature": 0.0,
+    "condition_on_previous_text": false,
+    "fp16": false,
+    "initial_prompt": null,
+    "compression_ratio_threshold": 2.4,
+    "logprob_threshold": -1.0,
+    "no_speech_threshold": 0.6,
+    "verbose": null
+  },
+  "recordings": [
+    {
+      "id": "speaker01_take01",
+      "audio": "Data/speaker01_take01.mp3",
+      "transcript": "Data/speaker01_take01.docx",
+      "pilot": true
+    },
+    {
+      "id": "speaker02_take01",
+      "audio": "Data/speaker02_take01.mp3",
+      "transcript": "Data/speaker02_take01.docx",
+      "pilot": true
+    }
+  ],
+  "duplicate_aliases": []
+}
